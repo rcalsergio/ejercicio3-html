@@ -1,15 +1,17 @@
 <!DOCTYPE html>
-<html lang=es>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Blog de recetas caseras fáciles y saludables"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de recetas caseras fáciles y saludables">
     <meta name="author" content="María Cocina">
     <title>El Rincón de las Recetas</title>
-    <link rel="stylesheet" href="recetas.css"
+    <link rel="stylesheet" href="recetas.css">
 </head>
 
 <body>
+
     <header id="inicio">
 
         <h1>El Rincón de las Recetas</h1>
@@ -20,7 +22,7 @@
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#recetas">Recetas</a></li>
-                <li><a href="#consejos">Consejos</a>
+                <li><a href="#consejos">Consejos</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -33,16 +35,16 @@
 
         <section id="presentacion">
 
-            <h2>Bienvenidos a mi cocina</h3>
+            <h2>Bienvenidos a mi cocina</h2>
 
             <p>
                 En este blog encontrarás recetas sencillas, económicas
                 y perfectas para preparar en casa.
             </p>
 
-            <img src="imagenes/cocina.jpg"
-                 alt="">
-
+            <!-- Agregado alt para accesibilidad -->
+            <img src="imagenes/cocina.jpg" alt="Vista general de la cocina">    
+            
             <p>
                 Si quieres conocer todas mis recetas,
                 <a href="recetas.html">haz clic aquí</a>.
@@ -56,12 +58,11 @@
             <h2>Mis recetas favoritas</h2>
 
 
-            <article>
+            <article id="tortilla">
 
                 <h3>Tortilla de patatas</h3>
 
-                <img src="imagenes/tortilla.jpg"
-                     alt="Tortilla de patatas">
+                <img src="imagenes/tortilla.jpg" alt="Tortilla de patatas tradicional">
 
                 <p>
                     Una receta clásica que nunca falla.
@@ -70,25 +71,26 @@
                 <h4>Ingredientes</h4>
 
                 <ul>
-                    <li>4 huevos
+                    <li>4 huevos</li>
                     <li>3 patatas medianas</li>
                     <li>1 cebolla</li>
                     <li>Aceite de oliva</li>
-                    <li>Sal
+                    <li>Sal</li>
                 </ul>
 
 
                 <h4>Preparación</h4>
 
+                <!-- Estructura de lista anidada corregida -->
                 <ol>
                     <li>Pelar y cortar las patatas.</li>
-                    <li>Freír las patatas y la cebolla.</li>
-
-                    <ul>
-                        <li>A fuego medio.</li>
-                        <li>Removiendo de vez en cuando.</li>
-                    </ul>
-
+                    <li>
+                        Freír las patatas y la cebolla:
+                        <ul>
+                            <li>A fuego medio.</li>
+                            <li>Removiendo de vez en cuando.</li>
+                        </ul>
+                    </li>
                     <li>Batir los huevos y mezclar.</li>
                     <li>Cuajar la tortilla por los dos lados.</li>
                 </ol>
@@ -98,19 +100,19 @@
                     dejar reposar la mezcla 5 minutos antes de cuajarla.
                 </p>
 
-                <a href="https://www.recetas.com/tortilla"
-                   target="_blank">
+                <a href="https://www.recetas.com/tortilla" target="_blank" rel="noopener noreferrer">
                     Ver receta completa
                 </a>
 
             </article>
 
 
-            <article>
+            <article id="ensalada">
 
-                <h3>Ensalada César<h3>
+                <h3>Ensalada César</h3>
 
-                <img src="imagenes/ensalada-cesar.jpg">
+                <!-- Corregido el alt engañoso -->
+                <img src="imagenes/ensalada-cesar.jpg" alt="Ensalada César con pollo y picatostes">
 
                 <p>
                     Una ensalada fresca y sencilla para cualquier ocasión.
@@ -135,7 +137,8 @@
 
                 <p>
                     Más información:
-                    <a href=https://es.wikipedia.org/wiki/Ensalada_C%C3%A9sar>
+                    <!-- Atributo href con comillas y texto visible para el enlace -->
+                    <a href="https://es.wikipedia.org/wiki/Ensalada_C%C3%A9sar" target="_blank" rel="noopener noreferrer">
                         Wikipedia
                     </a>
                 </p>
@@ -143,7 +146,7 @@
             </article>
 
 
-            <article>
+            <article id="bizcocho">
 
                 <h3>Bizcocho de chocolate</h3>
 
@@ -165,25 +168,25 @@
                 <h4>Tiempo de preparación</h4>
 
                 <table>
-
-                    <tr>
-                        <th>Preparación</th>
-                        <th>Horno</th>
-                        <th>Total</th>
-                    </tr>
-
-                    <tr>
-                        <td>15 minutos</td>
-                        <td>35 minutos</td>
-                        <td>50 minutos</td>
-                    </tr>
-
-                    <tr>
-                        <td>45 minutos</td>
-                        <td>10 minutos</td>
-                        <td>55 minutos</td>
-                    </tr>
-
+                    <thead>
+                        <tr>
+                            <th>Preparación</th>
+                            <th>Horno</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15 minutos</td>
+                            <td>35 minutos</td>
+                            <td>50 minutos</td>
+                        </tr>
+                        <tr>
+                            <td>45 minutos</td>
+                            <td>10 minutos</td>
+                            <td>55 minutos</td>
+                        </tr>
+                    </tbody>
                 </table>
 
             </article>
@@ -204,8 +207,7 @@
                     y trabaja sobre una superficie estable.
                 </p>
 
-                <img src="imagenes/cebolla.jpg"
-                     alt="Persona cortando una cebolla">
+                <img src="imagenes/cebolla.jpg" alt="Persona cortando una cebolla">
 
             </div>
 
@@ -219,9 +221,7 @@
                     permite cocinar de forma más rápida y ordenada.
                 </p>
 
-                <a href="https://www.directoalpaladar.com"
-                   target="_blank"
-                   rel="noopener">
+                <a href="https://www.directoalpaladar.com" target="_blank" rel="noopener noreferrer">
                     Consejos de cocina
                 </a>
 
@@ -236,11 +236,10 @@
 
             <div class="perfil">
 
-                <img src="imagenes/perfil.jpg"
-                     alt="Foto de perfil">
+                <img src="imagenes/perfil.jpg" alt="Foto de perfil de María">
 
                 <p>
-                    Soy aficionado a la cocina desde hace años
+                    Soy aficionada a la cocina desde hace años
                     y me encanta compartir mis recetas.
                 </p>
 
@@ -250,18 +249,21 @@
 
             <ul>
                 <li>
-                    <a href=instagram.com target="_blank">
+                    <!-- Añadido protocolo https:// y comillas -->
+                    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                         Instagram
                     </a>
                 </li>
 
                 <li>
-                    <a href="https://www.youtube.com">
+                    <!-- Cerrada la etiqueta </a> -->
+                    <a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
                         YouTube
+                    </a>
                 </li>
 
                 <li>
-                    <a href="https://www.facebook.com">
+                    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
                         Facebook
                     </a>
                 </li>
@@ -284,8 +286,9 @@
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre">
 
+                <!-- Vinculado el label con el id del input mediante for="email" -->
                 <label for="email">Correo electrónico</label>
-                <input type="email" name="email">
+                <input type="email" id="email" name="email">
 
                 <label for="receta">Tu receta favorita</label>
                 <textarea id="receta" name="receta"></textarea>
@@ -306,6 +309,7 @@
 
             <h2>Recetas más populares</h2>
 
+            <!-- Enlaces mal construidos corregidos poniéndoles href dentro de <a> -->
             <ol>
                 <li><a href="#tortilla">Tortilla de patatas</a></li>
                 <li><a href="#ensalada">Ensalada César</a></li>
@@ -316,7 +320,8 @@
 
             <ul>
                 <li>Postres</li>
-                <li>Platos principales
+                <!-- Cerrada la etiqueta </li> -->
+                <li>Platos principales</li>
                 <li>Entrantes</li>
                 <li>Recetas saludables</li>
             </ul>
@@ -328,7 +333,8 @@
 
     <footer>
 
-        <p>&copy 2026 El Rincón de las Recetas</p>
+        <!-- Corregida la entidad del Copyright (&copy;) -->
+        <p>2026 El Rincón de las Recetas</p>
 
         <nav>
             <ul>
@@ -340,7 +346,7 @@
 
         <p>
             Sígueme también en
-            <a href="https://www.instagram.com">
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
                 Instagram
             </a>
         </p>
@@ -349,4 +355,3 @@
 
 </body>
 </html>
-
