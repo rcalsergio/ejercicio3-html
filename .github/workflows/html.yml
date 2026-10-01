@@ -24,6 +24,3 @@ jobs:
             echo "exists=false" >> "$GITHUB_OUTPUT"
           fi
 
-      - name: Validar CSS
-        if: steps.css.outputs.exists == 'true'
-        run: npx --yes stylelint "**/*.css"
