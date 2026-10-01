@@ -39,11 +39,10 @@ section {
 .hero-image,
 .receta-imagen {
   width: 100%;
-  max-width: 600px;
+  max-width: 420px;
   height: auto;
   border-radius: 8px;
   display: block;
-  margin: 15px 0;
 }
 
 h1, h2, h3 {
