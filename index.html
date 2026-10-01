@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang=es>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Blog de recetas caseras fáciles y saludables"
+    <meta name="author" content="David Dorado">
+    <meta name="description" content="Blog de recetas caseras fáciles y saludables">
     <meta name="author" content="María Cocina">
     <title>El Rincón de las Recetas</title>
-    <link rel="stylesheet" href="recetas.css"
+    <link rel="stylesheet" href="recetas.css">
 </head>
 
 <body>
@@ -16,11 +17,11 @@
 
         <p>Recetas fáciles para todos los días</p>
 
-        <nav>
+        <nav aria-label="Primary">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#recetas">Recetas</a></li>
-                <li><a href="#consejos">Consejos</a>
+                <li><a href="#consejos">Consejos</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -33,15 +34,14 @@
 
         <section id="presentacion">
 
-            <h2>Bienvenidos a mi cocina</h3>
+            <h2>Bienvenidos a mi cocina</h2>
 
             <p>
                 En este blog encontrarás recetas sencillas, económicas
                 y perfectas para preparar en casa.
             </p>
 
-            <img src="imagenes/cocina.jpg"
-                 alt="">
+            <img src="imagenes/cocina.jpg" alt="Cocina" width="300">
 
             <p>
                 Si quieres conocer todas mis recetas,
@@ -60,8 +60,7 @@
 
                 <h3>Tortilla de patatas</h3>
 
-                <img src="imagenes/tortilla.jpg"
-                     alt="Tortilla de patatas">
+                <img src="imagenes/tortilla.jpg" alt="Tortilla de patatas" width="300">
 
                 <p>
                     Una receta clásica que nunca falla.
@@ -70,11 +69,11 @@
                 <h4>Ingredientes</h4>
 
                 <ul>
-                    <li>4 huevos
+                    <li>4 huevos</li>
                     <li>3 patatas medianas</li>
                     <li>1 cebolla</li>
                     <li>Aceite de oliva</li>
-                    <li>Sal
+                    <li>Sal</li>
                 </ul>
 
 
@@ -84,10 +83,12 @@
                     <li>Pelar y cortar las patatas.</li>
                     <li>Freír las patatas y la cebolla.</li>
 
-                    <ul>
-                        <li>A fuego medio.</li>
-                        <li>Removiendo de vez en cuando.</li>
-                    </ul>
+                    <li>
+                        <ul>
+                            <li>A fuego medio.</li>
+                            <li>Removiendo de vez en cuando.</li>
+                        </ul>
+                    </li>
 
                     <li>Batir los huevos y mezclar.</li>
                     <li>Cuajar la tortilla por los dos lados.</li>
@@ -98,8 +99,7 @@
                     dejar reposar la mezcla 5 minutos antes de cuajarla.
                 </p>
 
-                <a href="https://www.recetas.com/tortilla"
-                   target="_blank">
+                <a href="https://www.recetas.com/tortilla" target="_blank">
                     Ver receta completa
                 </a>
 
@@ -108,9 +108,9 @@
 
             <article>
 
-                <h3>Ensalada César<h3>
+                <h3>Ensalada César</h3>
 
-                <img src="imagenes/ensalada-cesar.jpg">
+                <img src="imagenes/ensalada-cesar.jpg" alt="Ensalada cesar" width="300">
 
                 <p>
                     Una ensalada fresca y sencilla para cualquier ocasión.
@@ -135,22 +135,14 @@
 
                 <p>
                     Más información:
-                    <a href=https://es.wikipedia.org/wiki/Ensalada_C%C3%A9sar>
+                    <a href="https://es.wikipedia.org/wiki/Ensalada_C%C3%A9sar">
                         Wikipedia
                     </a>
                 </p>
 
-            </article>
-
-
-            <article>
-
                 <h3>Bizcocho de chocolate</h3>
 
-                <img src="imagenes/bizcocho.jpg"
-                     alt="Bizcocho casero de chocolate"
-                     width="400"
-                     height="250">
+                <img src="imagenes/bizcocho.jpg" alt="Bizcocho casero de chocolate" width="400" height="250">
 
                 <h4>Ingredientes</h4>
 
@@ -165,35 +157,31 @@
                 <h4>Tiempo de preparación</h4>
 
                 <table>
+                    <thead>
+                        <tr>
+                            <th>Preparación</th>
+                            <th>Horno</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>15 minutos</td>
+                            <td>35 minutos</td>
+                            <td>50 minutos</td>
+                        </tr>
 
-                    <tr>
-                        <th>Preparación</th>
-                        <th>Horno</th>
-                        <th>Total</th>
-                    </tr>
-
-                    <tr>
-                        <td>15 minutos</td>
-                        <td>35 minutos</td>
-                        <td>50 minutos</td>
-                    </tr>
-
-                    <tr>
-                        <td>45 minutos</td>
-                        <td>10 minutos</td>
-                        <td>55 minutos</td>
-                    </tr>
-
+                        <tr>
+                            <td>45 minutos</td>
+                            <td>10 minutos</td>
+                            <td>55 minutos</td>
+                        </tr>
+                    </tbody>
                 </table>
 
             </article>
 
-        </section>
-
-
-        <section id="consejos">
-
-            <h2>Consejos de cocina</h2>
+            <h2 id="consejos">Consejos de cocina</h2>
 
             <div class="consejo">
 
@@ -204,8 +192,7 @@
                     y trabaja sobre una superficie estable.
                 </p>
 
-                <img src="imagenes/cebolla.jpg"
-                     alt="Persona cortando una cebolla">
+                <img src="imagenes/cebolla.jpg" alt="Una cebolla" width="300">
 
             </div>
 
@@ -219,9 +206,7 @@
                     permite cocinar de forma más rápida y ordenada.
                 </p>
 
-                <a href="https://www.directoalpaladar.com"
-                   target="_blank"
-                   rel="noopener">
+                <a href="https://www.directoalpaladar.com" target="_blank" rel="noopener">
                     Consejos de cocina
                 </a>
 
@@ -236,8 +221,7 @@
 
             <div class="perfil">
 
-                <img src="imagenes/perfil.jpg"
-                     alt="Foto de perfil">
+                <img src="imagenes/perfil.jpg" alt="Foto de perfil" width="300">
 
                 <p>
                     Soy aficionado a la cocina desde hace años
@@ -250,7 +234,7 @@
 
             <ul>
                 <li>
-                    <a href=instagram.com target="_blank">
+                    <a href="instagram.com" target="_blank">
                         Instagram
                     </a>
                 </li>
@@ -258,6 +242,7 @@
                 <li>
                     <a href="https://www.youtube.com">
                         YouTube
+                    </a>
                 </li>
 
                 <li>
@@ -316,7 +301,7 @@
 
             <ul>
                 <li>Postres</li>
-                <li>Platos principales
+                <li>Platos principales</li>
                 <li>Entrantes</li>
                 <li>Recetas saludables</li>
             </ul>
@@ -328,9 +313,9 @@
 
     <footer>
 
-        <p>&copy 2026 El Rincón de las Recetas</p>
+        <p>&copy; 2026 El Rincón de las Recetas</p>
 
-        <nav>
+        <nav aria-label="footer">
             <ul>
                 <li><a href="aviso-legal.html">Aviso legal</a></li>
                 <li><a href="privacidad.html">Política de privacidad</a></li>
@@ -348,5 +333,5 @@
     </footer>
 
 </body>
-</html>
 
+</html>
