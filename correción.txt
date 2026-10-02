@@ -1,0 +1,19 @@
+linea 2: falta comillas en lang=es
+linea 6: falta > al final de la etiqueta
+linea 9: falta > al final de la etiqueta
+linea 21: falta </li>
+linea 33: </h3> en vez de </h2>
+linea 75: falta </li>
+linea 79: falta </li>
+linea 87: <ul> anidado directamente dentro de <ol> sin <li>
+linea 109: <h3> en vez de </h3>
+linea 111: falta alt en <img>
+linea 134: falta comillas en href=https://...
+linea 204: falta https:// y comillas en href=instagram.com
+linea 210: falta </a>
+linea 236: falta id="email"
+linea 257: ID #tortilla no existe
+linea 258: ID #ensalada no existe
+linea 259: ID #bizcocho no existe
+linea 266: falta </li>
+linea 276: falta ; en &copy
