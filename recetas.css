@@ -1,0 +1,13 @@
+body {
+    background: #c31432;
+
+    background: linear-gradient(
+		to bottom left,
+		rgb(36, 152, 160),
+		rgb(194, 190, 190)
+	);
+}
+
+img {
+    width: 250px;
+}

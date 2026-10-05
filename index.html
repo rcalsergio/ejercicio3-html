@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang=es>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Blog de recetas caseras fáciles y saludables"
-    <meta name="author" content="María Cocina">
+    <meta name="description" content="Blog de recetas caseras fáciles y saludables">
     <title>El Rincón de las Recetas</title>
-    <link rel="stylesheet" href="recetas.css"
+    <link href="recetas.css">
 </head>
 
 <body>
@@ -16,11 +15,11 @@
 
         <p>Recetas fáciles para todos los días</p>
 
-        <nav>
+        <nav aria-label="inicio">
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
                 <li><a href="#recetas">Recetas</a></li>
-                <li><a href="#consejos">Consejos</a>
+                <li><a href="#consejos">Consejos</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
@@ -33,7 +32,7 @@
 
         <section id="presentacion">
 
-            <h2>Bienvenidos a mi cocina</h3>
+            <h2>Bienvenidos a mi cocina</h2>
 
             <p>
                 En este blog encontrarás recetas sencillas, económicas
@@ -41,11 +40,11 @@
             </p>
 
             <img src="imagenes/cocina.jpg"
-                 alt="">
+                 alt="cocina">
 
             <p>
                 Si quieres conocer todas mis recetas,
-                <a href="recetas.html">haz clic aquí</a>.
+                <a href="recetas.html" >haz clic aquí</a>.
             </p>
 
         </section>
@@ -70,11 +69,11 @@
                 <h4>Ingredientes</h4>
 
                 <ul>
-                    <li>4 huevos
+                    <li>4 huevos</li>
                     <li>3 patatas medianas</li>
                     <li>1 cebolla</li>
                     <li>Aceite de oliva</li>
-                    <li>Sal
+                    <li>Sal</li>
                 </ul>
 
 
@@ -82,12 +81,12 @@
 
                 <ol>
                     <li>Pelar y cortar las patatas.</li>
-                    <li>Freír las patatas y la cebolla.</li>
-
-                    <ul>
-                        <li>A fuego medio.</li>
-                        <li>Removiendo de vez en cuando.</li>
-                    </ul>
+                    <li>Freír las patatas y la cebolla.
+                        <ul>
+                            <li>A fuego medio.</li>
+                            <li>Removiendo de vez en cuando.</li>
+                        </ul>
+                    </li>
 
                     <li>Batir los huevos y mezclar.</li>
                     <li>Cuajar la tortilla por los dos lados.</li>
@@ -108,9 +107,9 @@
 
             <article>
 
-                <h3>Ensalada César<h3>
+                <h3>Ensalada César</h3>
 
-                <img src="imagenes/ensalada-cesar.jpg">
+                <img src="imagenes/ensalada-cesar.jpg" alt="Ensalada César">
 
                 <p>
                     Una ensalada fresca y sencilla para cualquier ocasión.
@@ -135,7 +134,7 @@
 
                 <p>
                     Más información:
-                    <a href=https://es.wikipedia.org/wiki/Ensalada_C%C3%A9sar>
+                    <a href="https://es.wikipedia.org/wiki/Ensalada_C%C3%A9sar">
                         Wikipedia
                     </a>
                 </p>
@@ -165,25 +164,28 @@
                 <h4>Tiempo de preparación</h4>
 
                 <table>
+                    <thead>
+                        <tr>
+                            <th>Preparación</th>
+                            <th>Horno</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
 
-                    <tr>
-                        <th>Preparación</th>
-                        <th>Horno</th>
-                        <th>Total</th>
-                    </tr>
-
-                    <tr>
-                        <td>15 minutos</td>
-                        <td>35 minutos</td>
-                        <td>50 minutos</td>
-                    </tr>
-
-                    <tr>
-                        <td>45 minutos</td>
-                        <td>10 minutos</td>
-                        <td>55 minutos</td>
-                    </tr>
-
+                    <tbody>
+                        <tr>
+                            <td>15 minutos</td>
+                            <td>35 minutos</td>
+                            <td>50 minutos</td>
+                        </tr>
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>45 minutos</td>
+                            <td>10 minutos</td>
+                            <td>55 minutos</td>
+                        </tr>
+                    </tbody>
                 </table>
 
             </article>
@@ -250,23 +252,17 @@
 
             <ul>
                 <li>
-                    <a href=instagram.com target="_blank">
-                        Instagram
-                    </a>
+                    <a href="instagram.com" target="_blank">Instagram</a>
                 </li>
 
                 <li>
-                    <a href="https://www.youtube.com">
-                        YouTube
+                    <a href="https://www.youtube.com">YouTube</a>
                 </li>
 
                 <li>
-                    <a href="https://www.facebook.com">
-                        Facebook
-                    </a>
+                    <a href="https://www.facebook.com">Facebook</a>
                 </li>
             </ul>
-
         </section>
 
 
@@ -283,18 +279,16 @@
 
                 <label for="nombre">Nombre</label>
                 <input type="text" id="nombre" name="nombre">
-
+            <br>
                 <label for="email">Correo electrónico</label>
                 <input type="email" name="email">
-
+            <br>
                 <label for="receta">Tu receta favorita</label>
-                <textarea id="receta" name="receta"></textarea>
-
-                <label>
-                    <input type="checkbox" name="newsletter">
-                    Quiero recibir nuevas recetas
-                </label>
-
+                <input id="receta" name="receta" type="text">
+            <br>
+                <input type="checkbox" name="newsletter">
+                <label for="newsletter">Quiero recibir nuevas recetas</label>
+            <br>
                 <button type="submit">Enviar</button>
 
             </form>
@@ -316,7 +310,7 @@
 
             <ul>
                 <li>Postres</li>
-                <li>Platos principales
+                <li>Platos principales</li>
                 <li>Entrantes</li>
                 <li>Recetas saludables</li>
             </ul>
@@ -328,9 +322,9 @@
 
     <footer>
 
-        <p>&copy 2026 El Rincón de las Recetas</p>
+        <p>&copy; 2026 El Rincón de las Recetas</p>
 
-        <nav>
+        <nav aria-label="footer">
             <ul>
                 <li><a href="aviso-legal.html">Aviso legal</a></li>
                 <li><a href="privacidad.html">Política de privacidad</a></li>
@@ -346,7 +340,6 @@
         </p>
 
     </footer>
-
 </body>
 </html>
 
